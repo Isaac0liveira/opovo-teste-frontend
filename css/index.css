@@ -1,0 +1,385 @@
+@font-face {
+    font-family: Oswald Regular;
+    src: url("../fonts/Oswald-Regular_0.ttf");
+}
+
+@font-face {
+    font-family: PTF55F;
+    src: url("../fonts/PTF55F.ttf");
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    max-width: 100%;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 490px 1fr 290px 1fr;
+    grid-template-rows: 50px 100% 0.5fr;
+    grid-template-areas:
+        "header header header header"
+        ". main sidebar ."
+        "footer footer footer footer";
+}
+
+.header {
+    display: flex;
+    grid-area: header;
+    background-color: #0079c1;
+    justify-content: center;
+}
+
+.header ul{
+    position: relative;
+    font-size: 20px;
+    top: 13px;
+    white-space: nowrap;
+    margin-left: 20%;
+}
+
+.header a{
+    margin-right: 5px;
+}
+
+.header .navbar-toggler{
+    position: relative;
+    font-size: 2.5rem;
+    top: 10px;
+}
+
+.header .logo-opovo{
+    position: relative;
+    background-size: 100% !important;
+    width: 160px;
+    height: 30px;
+    background: url("../assets/o-povo-online.png") no-repeat;
+    margin-top: 30px;
+    right: 10%;
+}
+
+@media screen and (max-width: 1175px) {
+    .header ul{
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    article {
+        grid-template-columns: 0fr 1fr 290px 0fr;
+    }
+
+    .header .logo-opovo{
+        right: 0%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    article{
+        grid-template-rows: auto 100% 0.5fr;
+    }
+
+    .header{
+        display: block;
+    }
+
+    .header .logo-opovo{
+        position: relative;
+        width: 250px;
+        height: 60px;
+        margin-top: 50px;
+        right: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    article {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 0.5fr 0.5fr 100% 0.5fr;
+        grid-template-areas:
+        "header header header header"
+        "sidebar sidebar sidebar sidebar"
+        "main main main main"
+        "footer footer footer footer";
+    }
+
+    .header {
+        display: block;
+        width: 100%;
+        justify-content: left;
+    }
+
+    .header .logo-opovo{
+        right: 220px;
+    }
+
+
+}
+
+
+.main {
+    grid-area: main;
+    width: 500px;
+    margin-top: 50px;
+    margin-right: 160px;
+    height: 90%;
+}
+
+.sidebar {
+    display: flex;
+    grid-area: sidebar;
+    align-items: center;
+    margin-top: 127px;
+    background-color: #314163;
+    height: 88%;
+}
+
+.sidebar .asset-vagas {
+    position: relative;
+    right: 100px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .main {
+        width: 100%;
+    }
+
+    .sidebar {
+        /*display: none;*/
+        margin-top: 0px;
+        flex-direction: row-reverse;
+        height: 120px;
+    }
+
+    .sidebar .asset-vagas {
+        right: 0;
+        top: 80px;
+        height: 320px;
+    }
+
+}
+
+@media screen and (max-width: 128px) {
+    .main {
+        width: auto;
+    }
+}
+
+.main h1, h2, h3, h4, h6, a, label {
+    font-family: Oswald Regular, sans-serif;
+    font-weight: normal;
+    margin: 0;
+    color: #314163;
+}
+
+.main a {
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.main h1 {
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.main h2 {
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.main h3 {
+    font-size: 26px;
+}
+
+.main h4 {
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+.main h5 {
+    font-family: PTF55F, sans-serif;
+    font-size: 19px;
+    margin-top: 10px;
+    font-weight: lighter;
+    color: #314163;
+}
+
+.main h6 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: lighter;
+    white-space: nowrap;
+    width: 200px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.main label {
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .main a {
+        font-size: 5vh;
+    }
+
+    .main h1 {
+        font-size: 12vh;
+    }
+
+    .main h2 {
+        font-size: 5vh;
+    }
+
+    .main h3 {
+        font-size: 5vh;
+    }
+
+    .main h4 {
+        font-size: 4vh;
+    }
+
+    .main h5 {
+        font-size: 3vh;
+    }
+
+    .main h6 {
+        font-size: 2.5vh;
+    }
+
+    .main label {
+        font-size: 22px;
+    }
+}
+
+.main .form-group {
+    margin: 20px;
+    margin-top: 45px;
+    padding: 20px;
+    border: 1px solid #314163;
+    background-color: #e8f8ff;
+}
+
+.main .form-control {
+    margin-top: 10px;
+    border-color: #314163;
+    border-radius: 5px;
+}
+
+.main .form-short {
+    width: 173px;
+}
+
+.main .form-medium {
+    width: 234px;
+}
+
+.main .form-row {
+    margin-bottom: 45px;
+}
+
+.main .form-row-cv {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.main .form-row-cv h4 {
+    margin-top: 0;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.main .form-control-file {
+    margin-top: 12px;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    background-color: #4A85AF;
+    cursor: pointer;
+    width: 165px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.main .form-text-small {
+    margin-top: 10px;
+}
+
+.main button[type="submit"] {
+    background-color: #314163;
+    margin-right: 20px;
+    border: none;
+    text-decoration: none;
+    font-family: Oswald Regular, sans-serif;
+    font-weight: normal;
+}
+
+
+.main .send-button {
+    display: flex;
+    justify-content: right;
+}
+
+@media screen and (max-width: 600px) {
+    .main .form-control-file {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .main .send {
+        width: 80%;
+        margin-right: 0;
+        font-size: 4vh;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .main .send-button {
+        justify-content: center;
+    }
+
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    background-color: #0079c1;
+    padding: 15px;
+    height: auto;
+}
+
+.footer h6{
+    margin-top: 10px;
+    font-size: 11px;
+    color: white;
+}
+
+.footer .logo-opovo-footer{
+    background-size: 100% !important;
+    width: 131px;
+    height: 19px;
+    background: url("../assets/o-povo-online.png") no-repeat;
+    margin-top: 5px;
+    right: 10%;
+}
