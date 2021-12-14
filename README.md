@@ -1,7 +1,7 @@
 <br>
-<span style="background-color:black">
- <img src="https://github.com/Isaac0liveira/opovo-teste-frontend/blob/master/assets/o-povo-online.png">
- </span>
+<p align=center>
+ <img src="https://github.com/Isaac0liveira/opovo-teste-frontend/blob/master/assets/o-povo-online.png" style="background-color:black">
+ </p>
 <br>
 <h1> O POVO Online - Teste Front-End </h1>
 <h4> Este é um projeto feito com o intuito de demonstrar minhas habilidades, desenvolvendo uma landpage responsiva para o jornal O POVO. <br>
