@@ -1,6 +1,6 @@
 <br>
 <p align=center>
- <img src="https://github.com/Isaac0liveira/opovo-teste-frontend-readme/blob/master/assets/o-povo-online-readme.png">
+ <img src="https://github.com/Isaac0liveira/opovo-teste-frontend/blob/master/assets/o-povo-online.png">
  </p>
 <br>
 <h1> O POVO Online - Teste Front-End </h1>
