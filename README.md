@@ -1,3 +1,4 @@
+<br>
 <p align=center>
  <img src="https://github.com/Isaac0liveira/opovo-teste-frontend/blob/master/assets/o-povo-online.png">
  </p>
