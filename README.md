@@ -1,5 +1,5 @@
 <br>
-<p align=center style="background-color: black">
+<p align=center style="color: red">
  <img src="https://github.com/Isaac0liveira/opovo-teste-frontend/blob/master/assets/o-povo-online.png">
  </p>
 <br>
